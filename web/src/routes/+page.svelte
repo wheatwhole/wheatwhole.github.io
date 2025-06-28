@@ -12,6 +12,9 @@
 	// @ts-ignore
 	import GithubIcon from '~icons/tabler/brand-github-filled';
 
+	import ProjectCard from '$components/ProjectCard.svelte';
+
+
 let tags = [
 		'Minecraft',
 		'Avatar: The Last Airbender',
@@ -25,9 +28,6 @@ let tags = [
 		'Dragon Ball',
 		'Mario'
 	];
-
-	export const trailingSlash = 'always';
-
 </script>
 
 <!--bottom navbar-->
@@ -64,7 +64,14 @@ let tags = [
 			img="/icons/awg.png"
 			description="in this pixel platformer adventure, the world has been thrown into chaos after a rogue chemist unleashed a powerful ancient potion, permanently flooding the Earth with unstable magical energy. I havent come up with a name for this yet, so I just called it 'award winning game' since that is what it's gonna be anyways. please excuse the unclear commit messages and 'monobranch' type management. "
 		/>
-	</div>
+		<ProjectCard url="https://github.com/wheatwhole/Award-Winning-Game"
+			urlshort="the repository"
+			name="award winning game"
+			img="/icons/awg.png"
+			description="in this pixel platformer adventure, the world has been thrown into chaos after a rogue chemist unleashed a powerful ancient potion, permanently flooding the Earth with unstable magical energy. I havent come up with a name for this yet, so I just called it 'award winning game' since that is what it's gonna be anyways. please excuse the unclear commit messages and 'monobranch' type management. "
+			banner="/icons/awg.png"
+			/>
+		</div>
 </div>
 
 <style>
