@@ -11,6 +11,7 @@ const config = {
 		}),
 		paths: {
 			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH,
+			relative: false
 		},
 		alias: {
 			// an alias ending /* will only match
