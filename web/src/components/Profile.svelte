@@ -19,12 +19,16 @@
 
   .pfp > img {
     width: 150px;
-    user-select: none;
+     user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none;      /* old IE */
     height: 150px;
   }
 
   .bio-title {
-    user-select: none;
+     user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none;      /* old IE */
     font-size: 30px;
     font-weight: 430;
   }

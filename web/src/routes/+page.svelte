@@ -11,8 +11,10 @@
 	import DiscordIcon from '~icons/pajamas/discord';	
 	// @ts-ignore
 	import GithubIcon from '~icons/tabler/brand-github-filled';
-
+	// @ts-ignore
+	import GunsLolIcon from '~icons/fa6-solid/gun';
 	import ProjectCard from '$components/ProjectCard.svelte';
+	import URLButton from '$components/inputs-and-buttons/URLButton.svelte';
 
 
 let tags = [
@@ -42,13 +44,16 @@ let tags = [
 				<p class="giantahhparagraph">
 					i'm a full-stack and game developer who has won the internet 🥀🐝
 				</p>
+				<br>
+				<p class="giantahhparagraph">check out ciabi:</p>
+				<URLButton url="https://ciabidev.github.io" urlshort ="ciabidev.github.io" name="ciabi dev team" img="/icons/logo-padded.png" />
 			</section>
 		</div>
 		<div class="contact-wrapper">
 			<Contact href="https://www.roblox.com/users/2342724391/profile" Icon={RobloxIcon} />
 			<Contact href="https://discord.com/users/968622168302833735" Icon={DiscordIcon} />
 			<Contact href="https://github.com/wheatwhole" Icon={GithubIcon} />
-			
+			<Contact href="https://guns.lol/wheatwhole" Icon={GunsLolIcon} />
 		</div>
 		<div class="likes-wrapper">
 			<h3 class="tiny-title">likes</h3>
@@ -56,7 +61,7 @@ let tags = [
 		</div>
 	</main>
 	<div class="projects">
-		<h3 class="tiny title">my games</h3>
+		<h3 class="tiny title">⏬ my projects ⏬</h3>
 		<ProjectCardMini
 			url="https://github.com/wheatwhole/Award-Winning-Game"
 			urlshort="the repository"
@@ -64,13 +69,22 @@ let tags = [
 			img="/icons/awg.png"
 			description="in this pixel platformer adventure, the world has been thrown into chaos after a rogue chemist unleashed a powerful ancient potion, permanently flooding the Earth with unstable magical energy. I havent come up with a name for this yet, so I just called it 'award winning game' since that is what it's gonna be anyways. please excuse the unclear commit messages and 'monobranch' type management. "
 		/>
-		<ProjectCard url="https://github.com/wheatwhole/Award-Winning-Game"
-			urlshort="the repository"
-			name="award winning game"
-			img="/icons/awg.png"
-			description="in this pixel platformer adventure, the world has been thrown into chaos after a rogue chemist unleashed a powerful ancient potion, permanently flooding the Earth with unstable magical energy. I havent come up with a name for this yet, so I just called it 'award winning game' since that is what it's gonna be anyways. please excuse the unclear commit messages and 'monobranch' type management. "
-			banner="/icons/awg.png"
-			/>
+		<ProjectCardMini
+			url="https://routinehub.co/shortcut/19577/"
+			urlshort="routinehub.co/shortcut/19577"
+			name="Cyclone"
+			img="/icons/cyclone.webp"
+			description="an entire framework inside iOS Shortcuts (yes, the automation app)."
+		/>
+		<ProjectCardMini
+			url="https://ciabidev.github.io/packgod/"
+			urlshort="ciabidev.github.io/packgod"
+			name="packgod humbler 3000"
+			img="/icons/packgod.webp"
+			description="we call it the packgod humbler 3000, a scary accurate packgod roast generator. will humble any fools in the vicinity. practice caution when using.
+
+"
+		/>
 		</div>
 </div>
 

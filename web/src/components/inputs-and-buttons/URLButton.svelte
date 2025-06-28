@@ -18,7 +18,9 @@
 
 <style>
 	.url-button {
-		user-select: none;
+		 user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none;      /* old IE */
 		flex-shrink: 0;
 		display: flex;
 		min-width: fit-content;

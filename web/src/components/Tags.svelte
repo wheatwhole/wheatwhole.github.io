@@ -63,6 +63,8 @@
     font-family: "IBM Sans Mono", monospace;
     width: max-content;
     color: var(--text-color);
-    user-select: none;
+     user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none;      /* old IE */
 }
 </style>
