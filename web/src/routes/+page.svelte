@@ -25,6 +25,9 @@ let tags = [
 		'Dragon Ball',
 		'Mario'
 	];
+
+	export const trailingSlash = 'always';
+
 </script>
 
 <!--bottom navbar-->
