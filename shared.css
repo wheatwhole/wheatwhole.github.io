@@ -10,7 +10,7 @@
 	--main-color: #337e4c;
 	--wheatwhole-color: #52b171;
 	--text-color: #282828; 
-	--sub-color: #00000067; /* for sub text */
+	--sub-color: #75757E; /* for sub text */
 	--elevated: #e3e3e3; /* for buttons and tags */
 	--color-allgood: #40d672;
 	--color-warning: #ffd63a;
@@ -41,10 +41,6 @@
 	--content-border-radius: 1rem;
 	--border-radius: 12px;
 	font-size: 16px;
-}
-
-html {
-	overflow: hidden;
 }
 
 @keyframes fadeIn {
@@ -129,7 +125,9 @@ h4,
 h5,
 h6 {
 	text-wrap: balance;
-	user-select: none;
+	 user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none;      /* old IE */
 }
 
 /*
@@ -506,7 +504,8 @@ body {
 	overflow-x: hidden;
 	overflow-y: auto;
 	width: 100vw;
-	height: 96vh;
+	height: 100vh;
+height: 100dvh;
 	background-size: cover;
 	font-family:
 		Noto Sans Mono Variable,
@@ -523,10 +522,29 @@ body {
 	animation: fadeIn 200ms forwards;
 }
 
+html, body {
+  height: 100%;
+  overflow-y: auto;
+  overscroll-behavior: auto;
+  -webkit-overflow-scrolling: touch; /* ✅ iOS elastic scroll */
+}
 
 img {
-	user-select: none;
+	 user-select: none;
+  -webkit-user-select: none;  /* Safari / iOS */
+  -ms-user-select: none;      /* old IE */
 }
+
+::selection {
+  background-color: var(--main-color);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--main-color);
+  color: white;
+}
+
 /* END RESET */
 
 
@@ -561,7 +579,7 @@ a:hover {
 .giantahhparagraph {
 	line-height: 1.4;
 	font-size: 1.1875rem;
-	opacity: 0.5;
+	color: var(--sub-color)
 }
 
 .bullet-title {
@@ -569,7 +587,7 @@ a:hover {
 }
 
 .sub-text {
-	opacity: 0.5;
+	color: var(--sub-color);
 	font-weight: 430;
 }
 
