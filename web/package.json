@@ -12,7 +12,7 @@
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"predeploy": "npm run build",
-    	"deploy": "gh-pages -d build"
+    	"deploy": "gh-pages --branch main --dotfiles --message 'Deploy site' -d build"
 	},
 	"files": [
 		"dist",
