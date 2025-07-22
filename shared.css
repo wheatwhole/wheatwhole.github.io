@@ -594,8 +594,6 @@ a:hover {
 .container {
 	/* a second body */
 	display: flex;
-    justify-content: center;
-    align-items: center;
 	position: relative;
 	width: 100%;
 	height: 100dvh;
