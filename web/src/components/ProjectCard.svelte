@@ -17,11 +17,14 @@
     {description}
   </div> -->
 
+    {#if banner}
+
 	<div class="banner-container">
 		<img src={banner} alt={name} />
 	</div>
+	{/if}
 	<div class="card-main">
-		<URLButton {url} {urlshort} {name} {img} />
+		<URLButton {url} urlshort={urlshort} {name} {img} />
 		<div class="contents">
 			<div class="project-header">
 				<h2 class="project-name">{name}</h2>
@@ -61,17 +64,19 @@
 	}
 
 	.banner-container {
-		width: 100%;
-		height: 150px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
+		height: 250px;
 	}
 
 	.banner-container > img {
 		object-fit: cover;
-		width: 100%;
+		flex-shrink: 0;
+		min-width: 100%;
+		min-height: 100%;
+		height: auto;
 	}
 
 	.project-header {
